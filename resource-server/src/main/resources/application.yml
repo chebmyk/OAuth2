@@ -1,0 +1,12 @@
+server:
+  port: 9992
+security:
+  oauth2:
+    resource:
+      jwt:
+        key-value: -----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAuBL/QdJHtMdXOzmu1R4x1Nlw6+P4i8H7KSLb/uF7d/pkykGZ4GJKh9w2jl7+4YAH3j3LYd/9I2lCTGSAHxOVzNlZL9f6pGAluniF88Y6+/L5ZasyLS6Y6BTufl+dW6USfL7okE5LUb0Nn4KxxDU189GgBWOh8ddARr246e0GbRfKCywXfj/aGj6mGj2UtWWfutzzuhxIKDjx/3XuFnya+dB06k9ruxPvSh8OOX9etGQIRUI1EIo1arSy39ANMdNAn6Bg/gH2CEeOGfr34GO4OSlTsEsGNjxQBSu1iTepM8iMWBGRmO/wqB+Dt/s1JhEWC+q5HnO+JBc5NXKFPVvMzwIDAQAB-----END PUBLIC KEY-----
+    client:
+      client-id: client_id
+      client-secret: secret
+    authorization:
+      check-token-access: http://localhost:9990/oauth/check_token

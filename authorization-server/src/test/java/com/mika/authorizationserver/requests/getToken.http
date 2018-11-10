@@ -1,0 +1,41 @@
+#grant_type = Password
+
+POST /oauth/token HTTP/1.1
+Host: localhost:9990
+Authorization: Basic Y2xpZW50X2lkOnNlY3JldA==
+Cache-Control: no-cache
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="grant_type"
+
+password
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="username"
+
+forreg@i.ua
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="password"
+
+admin
+------WebKitFormBoundary7MA4YWxkTrZu0gW--
+
+####grant_type = refresh_token
+
+POST /oauth/token HTTP/1.1
+Host: localhost:9990
+Authorization: Basic Y2xpZW50X2lkOnNlY3JldA==
+Cache-Control: no-cache
+Content-Type: multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW
+
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="grant_type"
+
+refresh_token
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+Content-Disposition: form-data; name="refresh_token"
+
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX25hbWUiOiJmb3JyZWdAaS51YSIsInNjb3BlIjpbInJlYWQiLCJ3cml0ZSJdLCJhdGkiOiJiYWRkOTIzZi0wMTgwLTRkZTItYjYzYi1iODQ2OTFhYzAwM2IiLCJleHAiOjE1NDA1ODMyNDMsImlzc3VlIGRhdGUiOnsibW9udGgiOiJPQ1RPQkVSIiwieWVhciI6MjAxOCwiZGF5T2ZNb250aCI6MjYsImRheU9mV2VlayI6IkZSSURBWSIsImRheU9mWWVhciI6Mjk5LCJtb250aFZhbHVlIjoxMCwiaG91ciI6MTIsIm1pbnV0ZSI6NDcsIm5hbm8iOjgyNTAwMDAwMCwic2Vjb25kIjoyMywiY2hyb25vbG9neSI6eyJpZCI6IklTTyIsImNhbGVuZGFyVHlwZSI6Imlzbzg2MDEifX0sImF1dGhvcml0aWVzIjpbIkFETUlOIl0sImp0aSI6ImU2ODM2NjE2LWU1ZTAtNDJkZC05ZTA4LTg5Y2UyZWY4YTFmYSIsImNsaWVudF9pZCI6ImNsaWVudF9pZCJ9.Yst7jQHq93GZdS85f2Asl2AgKH76inIjIqLTs6vYV-3pBj8UduYFVe40eqaM5ZQlIeSFqCwyjhgSQoM8VOQ0CFUTdG9gM4Aq8Ai1CROizCr6DvZsooNDTrHFQm2vDA4CsLlHU2FLTpTNzvR9hIu46ODf7GkCFMeBHav7InjXKECax-k11pwVDNEJ6aKRVmq0BjO1IAVfw4mdrQao1cEcojmn7VnqD6QDdrn9mjd7PmYGTXw59torBCoVi9oH03s6mgb6Hu7YlXkWGi83tHVUxMUGGru6PHNv43WuSxkCJmdTqxm8GlVqq7SFX8tXAfPP7b9LAfX2g-uqwBS_dP75bA
+------WebKitFormBoundary7MA4YWxkTrZu0gW
+
+###

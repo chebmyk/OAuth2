@@ -1,0 +1,19 @@
+security:
+  oauth2:
+    client:
+      clientId: client_id
+      clientSecret: secret
+      accessTokenUri: http://localhost:9990/oauth/token
+      userAuthorizationUri: http://localhost:9990/oauth/authorize
+      clientAuthenticationScheme: form
+      authenticationScheme: query
+      scope: read,write
+    resource:
+      userInfoUri: http://localhost:9992/userinfo
+server:
+  port: 9991
+  servlet:
+    session:
+      cookie:
+        name: OAUTHSESSION
+    context-path: /client
